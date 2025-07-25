@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>M7Downloader - Login</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- 1st View: Conditions -->
+        <div id="statusMessage">
+
+            <div id="header">
+                <h2>Bienvenido a M7Downloader</h2>
+                <hr>
+            </div>
+
+            <p>
+                Antes de comenzar, asegúrate de cumplir estas condiciones:<br>
+                <br><i class="fas fa-check-circle"></i> Has iniciado sesión manualmente en
+                <a href="https://modulo7.ucab.edu.ve" target="_blank"><strong>Modulo 7</strong></a> y tienes acceso a
+                tus cursos.<br>
+                <br><i class="fas fa-check-circle"></i> Tienes abierta la pestaña principal de M7 con tus cursos
+                visibles.
+            </p>
+
+            <button id="Button1">Continuar</button>
+        </div>
+
+        <!-- 2nd View: List of Courses -->
+        <div id="courseList" class="hidden">
+            <h3>Selecciona los cursos para descargar:</h3>
+            <form id="cursoForm">
+                <ul id="cursoChecklist"></ul>
+                <button id="startScrapingBtn">Comenzar descarga</button>
+            </form>
+        </div>
+
+
+        <!-- Pie de pagina -->
+        <footer>
+            <p><br>Software under the GPL v3 license</p>
+            <p>Version 1.0.0</p>
+            <p>Proudly designed and developed by
+                <a href="https://github.com/Badjavii" target="_blank">
+                    Badjavii
+                </a>
+            </p>
+            <div id="rrss-icons">
+                <a href=" https://github.com/Badjavii/m7downloader" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts/background.js"></script>
+    <script src="scripts/scraping.js"></script>
+</body>
+
+</html>
